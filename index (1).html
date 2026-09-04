@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HONEY — A Graphic Novel</title>
+<style>
+:root{--ink:#0b0b0c;--paper:#f1eee7;--gold:#e2a72e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:Arial,Helvetica,sans-serif}
+.hero{min-height:100vh;position:relative;display:flex;align-items:flex-end;background:#0b0b0c url("honey-hero.png") center center/cover no-repeat}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(11,11,12,.92) 100%)}
+.hero-inner{position:relative;z-index:2;width:min(1100px,90%);margin:0 auto;padding:0 0 7vh}
+.cta{display:inline-block;padding:1rem 1.35rem;border:2px solid #fff;background:rgba(0,0,0,.48);color:#fff;text-decoration:none;font-weight:900;letter-spacing:.08em}
+.cta:hover{background:#fff;color:#111}
+section{width:min(1100px,90%);margin:auto;padding:7rem 0;border-top:1px solid #292929}
+.character{display:grid;grid-template-columns:1fr 1.25fr;gap:5vw;align-items:center}
+.art{min-height:430px;border:1px solid #353535;background:linear-gradient(145deg,#242426,#101011);display:grid;place-items:center;text-align:center;padding:2rem;color:#777}
+.art strong{display:block;color:#bbb;font-size:1.35rem;margin-bottom:.5rem}
+.num{color:var(--gold);font-size:.8rem;letter-spacing:.25em}
+h2{font-size:clamp(3.5rem,9vw,7rem);margin:.05em 0 .15em;letter-spacing:-.05em}
+p{font-size:1.15rem;line-height:1.65;color:#c8c4bd;max-width:620px}
+.honey h2{color:var(--gold)}
+.preview{text-align:center}.preview p{margin:0 auto 2rem}
+footer{text-align:center;padding:4rem 5%;color:#777;font-size:.85rem}
+@media(max-width:720px){.hero{min-height:72vh;background-position:center}.character{grid-template-columns:1fr}.art{min-height:330px}section{padding:5rem 0}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <a class="cta" href="#preview">READ ISSUE #1 — FREE</a>
+  </div>
+</header>
+
+<section class="character honey">
+<div class="art"><div><strong>HONEY ART GOES HERE</strong>Next: Honey's character image</div></div>
+<div><div class="num">01 / HONEY</div><h2>HONEY</h2>
+<p>160 pounds of elegance. A ridiculous hat. Absolutely convinced she belongs wherever her people are.</p></div>
+</section>
+
+<section class="character">
+<div><div class="num">02 / MARA</div><h2>MARA</h2>
+<p>Sharp. Sarcastic. Selective about who gets her energy. Her people are her people.</p></div>
+<div class="art"><div><strong>MARA ART GOES HERE</strong>Character artwork placeholder</div></div>
+</section>
+
+<section class="character">
+<div class="art"><div><strong>J ART GOES HERE</strong>Character artwork placeholder</div></div>
+<div><div class="num">03 / J</div><h2>J</h2>
+<p>Forty-two. Rough around the edges. Polite, not friendly. Somehow very good at getting involved in problems that were absolutely none of his business.</p></div>
+</section>
+
+<section class="preview" id="preview">
+<div class="num">START HERE</div><h2>ISSUE #1</h2>
+<p>The free Issue #1 preview will be connected here next.</p>
+<a class="cta" href="#">READ THE FREE PREVIEW</a>
+</section>
+<footer>HONEY · A GRAPHIC NOVEL · PHOENIX, ARIZONA</footer>
+</body>
+</html>
